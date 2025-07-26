@@ -98,7 +98,7 @@ include 'footer.php';
 ?>
 <script src="https://kit.fontawesome.com/eedbcd0c96.js" crossorigin="anonymous"></script>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
