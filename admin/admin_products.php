@@ -14,7 +14,7 @@ if(isset($_POST['add_products_btn'])){
   $image=$_FILES['image']['name'];
   $image_size=$_FILES['image']['size'];
   $image_tmp_name=$_FILES['image']['tmp_name'];
-  $image_folder="uploaded_img/".$image;
+  $image_folder="../uploaded_img/".$image;
 
   $select_product_name=mysqli_query($conn, "SELECT name FROM `products` WHERE name='$name'") or die('query failed');
 
@@ -40,7 +40,7 @@ if(isset($_GET['delete'])){
 
   $delete_img_query=mysqli_query($conn,"SELECT image from `products` WHERE id='$delete_id'") or die('query failed');
   $fetch_del_img=mysqli_fetch_assoc($delete_img_query);
-  unlink('./uploaded_img/'.$fetch_del_img);
+  unlink('../uploaded_img/'.$fetch_del_img);
 
   mysqli_query($conn, "DELETE FROM `products` WHERE id='$delete_id'") or die('query failed');
   header('location:admin_products.php');
@@ -56,7 +56,7 @@ if(isset($_POST['update_product'])){
   $update_image=$_FILES['update_image']['name'];
   $update_image_tmp_name=$_FILES['update_image']['tmp_name'];
   $update_image_size=$_FILES['update_image']['size'];
-  $update_folder='./uploaded_img/'.$update_image;
+  $update_folder='../uploaded_img/'.$update_image;
   $old_image=$_POST['update_old_img'];
   if(!empty($update_image)){
     if($update_image_size>2000000){
@@ -65,7 +65,7 @@ if(isset($_POST['update_product'])){
       mysqli_query($conn,"UPDATE `products` SET image='$update_image' WHERE id='$update_p_id'") or die('query failed');
 
       move_uploaded_file($update_image_tmp_name,$update_folder);
-      unlink('./uploaded_img/'.$old_image);
+      unlink('../uploaded_img/'.$old_image);
 
       $message[]="Product added successfully!";
     }
@@ -115,7 +115,7 @@ include 'admin_header.php';
     ?>
 
     <div class="product_box">
-      <img src="./uploaded_img/<?php echo $fetch_products['image'];?>" alt="">
+      <img src="../uploaded_img/<?php echo $fetch_products['image'];?>" alt="">
 
       <div class="product_name">
       <?php echo $fetch_products['name'];?>
@@ -153,7 +153,7 @@ include 'admin_header.php';
 
     <input type="hidden" name="update_old_img" value="<?php echo $fetch_update['image'];?>">
 
-    <img src="./uploaded_img/<?php echo $fetch_update['image'];?>" alt="">
+    <img src="../uploaded_img/<?php echo $fetch_update['image'];?>" alt="">
 
 
     <input type="text" name="update_name" value="<?php echo $fetch_update['name'];?>" class="admin_input update_box" required placeholder="Enter Product Name">
