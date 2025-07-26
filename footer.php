@@ -2,8 +2,8 @@
   <div class="footer_box_container">
     <div class="footer_box">
       <div class="footer_logo_cont">
-        <img src="book_logo.png" alt="">
-      <a href="home.php" class="book_logo">Bookiee</a>
+        <img src="img/book_logo.png" alt="">
+      <a href="home.php" class="book_logo">Novel Nest</a>
 
       </div>
       <p><i class="fas fa-phone"></i> 01781641350</p>
@@ -28,5 +28,5 @@
       <a href="orders.php">Orders</a>
     </div>
   </div>
-  <p>Copyright <i class="fa-regular fa-copyright"></i> 2025 <span> All Rights Reserved by Bookiee</span></p>
+  <p>Copyright <i class="fa-regular fa-copyright"></i> 2025 <span> All Rights Reserved by Novel Nest</span></p>
 </section>

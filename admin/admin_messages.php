@@ -56,7 +56,7 @@ include 'admin_header.php';
   </div>
 </section>
 
-<script src="admin_js.js"></script>
+<script src="../js/admin_js.js"></script>
 <script src="https://kit.fontawesome.com/eedbcd0c96.js" crossorigin="anonymous"></script>
 
 </body>

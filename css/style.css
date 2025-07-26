@@ -215,7 +215,7 @@
 }
 
 .logo_cont{
-    width: 10%;
+    width: 15%;
     display: flex;
     justify-content: center;
     gap: 0.3rem;
@@ -223,7 +223,7 @@
 }
 
 .logo_cont img{
-    width: 40%;
+    width: 25%;
 }
 
 .book_logo{

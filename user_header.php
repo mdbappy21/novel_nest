@@ -14,9 +14,9 @@ if(isset($message)){
   <div class="header_1">
     <div class="user_flex">
       <div class="logo_cont">
-        <img src="book_logo.png" alt="">
+        <img src="img/book_logo.png" alt="">
 
-        <a href="home.php" class="book_logo">Bookiee</a>
+        <a href="home.php" class="book_logo">Novel Nest</a>
       </div>
 
 
@@ -29,9 +29,6 @@ if(isset($message)){
       </nav>
 
       <div class="last_part">
-        <div class="loginorreg">
-          <p>New <a href="auth/login.php">Login</a> | <a href="auth/register.php">Register</a></p>
-        </div>
 
         <div class="icons">
         <!-- <i class="fa-solid fa-magnifying-glass"></i> -->

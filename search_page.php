@@ -95,7 +95,7 @@ if (isset($_POST['add_to_cart'])) {
   ?>
   <script src="https://kit.fontawesome.com/eedbcd0c96.js" crossorigin="anonymous"></script>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 
