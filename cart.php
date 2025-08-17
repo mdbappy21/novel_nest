@@ -64,7 +64,7 @@ include 'user_header.php';
       <a href="cart.php?delete=<?php echo $fetch_cart['id'];?>" class="fas fa-times" onclick="return confirm('Are you sure you want to delete this product from cart');"></a>
       <img src="./uploaded_img/<?php echo $fetch_cart['image'];?>" alt="">
       <h3><?php echo $fetch_cart['name']; ?></h3>
-      <p>Rs. <?php echo $fetch_cart['price']; ?>/-</p>
+      <p>TK <?php echo $fetch_cart['price']; ?>/-</p>
 
       <form action="" method="post">
         <input type="hidden" name="cart_id" value="<?php echo $fetch_cart['id'];?>">
@@ -83,7 +83,7 @@ include 'user_header.php';
   </div>
 
   <div class="cart_total">
-    <h2>Total Cart Price : <span>$ <?php echo $grand_total;?>/-</span></h2>
+    <h2>Total Cart Price : <span>TK <?php echo $grand_total;?>/-</span></h2>
     <div class="btns_cart">
     <a href="cart.php?delete_all" class="product_btn <?php echo ($grand_total > 1)?'':'disabled'; ?>" onclick="return confirm('Are you sure you want to delete all cart items from cart?');">Delete All</a>
       <a href="shop.php" class="product_btn">Continue Shopping</a>

@@ -81,7 +81,7 @@ if(isset($message)){
         
         <div class="links">
             <a href="#">Forgot Password</a>
-            <a href="register.php">Sign in</a>
+            <a href="register.php">Sign Up</a>
         </div>
 
         <input type="submit" value="Login" name="submit">
