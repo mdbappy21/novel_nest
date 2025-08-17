@@ -44,7 +44,7 @@ include 'admin_header.php';
           };
         };
       ?>
-      <h3>Rs. <?php echo $total_pendings;?></h3>
+      <h3>TK <?php echo $total_pendings;?></h3>
       <p>Total Payments Pending </p>
     </div>
 
@@ -60,7 +60,7 @@ include 'admin_header.php';
           };
         };
       ?>
-      <h3>Rs. <?php echo $total_completed;?></h3>
+      <h3>TK <?php echo $total_completed;?></h3>
       <p>Completed Payments</p>
     </div>
     

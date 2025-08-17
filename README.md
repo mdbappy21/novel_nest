@@ -1,4 +1,4 @@
-# Nover Nest
+# Novel Nest
 
 Developed using HTML, CSS, JavaScript, and PHP technologies</br>
 Features : </br>

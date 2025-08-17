@@ -121,7 +121,7 @@ include 'admin_header.php';
       <?php echo $fetch_products['name'];?>
       </div>
 
-      <div class="product_price">Rs. 
+      <div class="product_price">TK 
       <?php echo $fetch_products['price'];?> /-
       </div>
 
